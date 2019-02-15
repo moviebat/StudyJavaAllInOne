@@ -12,13 +12,23 @@ package com.dyq.exception;
 
 public class MyException {
     public static void main(String[] args) {
-        Cat cat = null;
+        Cat cat1 = null;
         try{
-            cat = new Cat("小谷",-4,true);
+            cat1 = new Cat("静静",2,true);
+        }catch(Exception e ){
+            System.out.println("有错误！");
+        }
+        System.out.println(cat1.toString());
+
+        Cat cat2 = null;
+        try{
+            cat2 = new Cat("小谷",-4,true);
         }catch(Exception e){
             System.out.println("输入的年龄非法！异常的原因是："+e.getMessage());
         }
-        System.out.println(cat.toString());
+        System.out.println(cat2.toString());
+
+
 
     }
 }
