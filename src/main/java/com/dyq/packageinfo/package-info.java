@@ -6,4 +6,4 @@
  *
  * 本包是测试java的pacakge-info.java功能的测试包
  */
-package com.dyq.special.packageinfo;
+package com.dyq.packageinfo;
